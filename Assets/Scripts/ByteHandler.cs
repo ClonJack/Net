@@ -4,6 +4,7 @@ using System;
 
 public static class ByteHandler
 {
+    #region public methods 
     public static T ByteArrayToObject<T>(byte[] arrBytes )
     {     
         using (var memStream = new MemoryStream())
@@ -25,4 +26,5 @@ public static class ByteHandler
             return ms.ToArray();
         }
     }
+    #endregion
 }
